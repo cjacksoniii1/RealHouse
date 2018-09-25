@@ -5,6 +5,26 @@ namespace Consolehouse
 {
     class Program
     {
+        static void NarrateTalk(string input)
+        {
+            foreach(char letter in input)
+            {
+                int typewriterDelay = 65;
+                Thread.Sleep(typewriterDelay);
+                Console.Write(letter);
+            }
+        }
+        static void HellTalk(string input)
+        {
+            foreach (char letter in input)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                int typewriterDelay = 50;
+                Thread.Sleep(typewriterDelay);
+                Console.Write(letter);
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+        }
         static void HostTalk(string input)
         {
             foreach (char letter in input)
@@ -16,12 +36,18 @@ namespace Consolehouse
         }
         static void HellLogic()
         {
-            Console.WriteLine("/placeholder/");
+            NarrateTalk("Taking a peak inside the closet reveals that it seems to contain an entrance to     \n");
+            HellTalk("...Hell...\n");
+            HellTalk("You gaze deep into the portal. In the distance, you hear the pained wails of the damned...\n...doomed to forever exist in a swirling vortex of pain and missery...\nIn the center, behind legions of horrible monsters and tormented souls...\nsits an entity that exudes both beauty and terror, the likes of which you have never known before.");
+            NarrateTalk("\nYou close the closet door.\n");
+            //Console.WriteLine("/placeholder/");
             BedroomLogic();
         }
         static void EndLogic()
         {
-            Console.WriteLine("/placeholder/");
+            HostTalk("Oh! You're finished?\nExcellent!\nTell me honestly, what did you think? Do you like it?! (y\n)");
+
+            //Console.WriteLine("/placeholder/");
             return;
         }
         static void MainRoomLogic()
@@ -55,14 +81,14 @@ namespace Consolehouse
                 action = Console.ReadLine();
                 if (action == "fridge")
                 {
-                    Console.WriteLine("It appears to be a newer model of fridge. Upon further investigation, there appears to be bottled waters on the inside.\n");
+                   NarrateTalk("It appears to be a newer model of fridge. Upon further investigation, there appears to be bottled waters on the inside.\n");
                     HostTalk("Ah, are you thirsty? You may take one if you like.\n");
-                    Console.WriteLine("Take one? (y/n)");
+                    NarrateTalk("Take one? (y/n)");
                     answer = Console.ReadLine();
                     if (answer == "y")
-                        Console.WriteLine("You take one. The water is cool and refreshing");
+                        NarrateTalk("You take one. The water is cool and refreshing");
                     else
-                        Console.WriteLine("You decide against it and close the fridge door");
+                        NarrateTalk("You decide against it and close the fridge door");
                 }
                 KitchenLogic();
                 if (action == "main")
@@ -70,16 +96,16 @@ namespace Consolehouse
                 if (action == "ask")
                     HostTalk("Ah yes, the kitchen! We recently renovated it. All the apliances are new.\nI hope you like it.");
                 if (action == "describe")
-                    Console.WriteLine("The kitchen is sparkling clean. A fridge and an electric oven sit atop black and white checkered tiles.\n There is also a dishwasher, sink and microwave. The sink itself is squeaky clean, and the countertops shine like justice.");
+                    NarrateTalk("The kitchen is sparkling clean. A fridge and an electric oven sit atop black and white checkered tiles.\n There is also a dishwasher, sink and microwave. The sink itself is squeaky clean, and the countertops shine like justice.");
                 if (action == "finish")
                     EndLogic();
                 else
-                    Console.WriteLine("\nplease enter a valid command\n'describe'  'ask'  'main'  'fridge'  'finish'");
+                    NarrateTalk("\nplease enter a valid command\n'describe'  'ask'  'main'  'fridge'  'finish'");
             }
         }
         static void BedroomLogic()
         {
-            Console.WriteLine("/placeholder/");
+            NarrateTalk("(You are in the main room)\n(Take an action or type 'finish')\n'describe'  'ask'  'main'  'bathroom'  'closet'\n");
 
             string action = "";
             while (action != "finish")
@@ -92,18 +118,18 @@ namespace Consolehouse
                 if (action == "bathroom")
                     BathroomLogic();
                 if (action == "ask")
-                    Console.WriteLine("/placeholder/");
+                    HostTalk("Now, I know what you're thinking: It looks a bit plain. But don't you see? That is the beauty of this place!\nThink of it as a blank canvas, all it needs is someone like you to come along and make it your own!");
                 if (action == "describe")
-                    Console.WriteLine("/placeholder/");
+                    NarrateTalk("The bedroom seems somewhat barren. A queen-sized bedframe sits in the corner.\n An older style of ceiling fan buzzes above you, illuminating the rooms innoffensivly colored walls and carpet.\nThree wooden doors lead to the main room, a bathroom, and a closet.");
                 if (action == "finish")
                     EndLogic();
                 else
-                    Console.WriteLine("\nplease enter a valid command\n'describe'  'ask'  'kitchen'  'bedroom'  'finish'");
+                    Console.WriteLine("\nplease enter a valid command\n'describe'  'ask'  'main'  'bathroom'  'closet'  'finish'");
             }
         }
         static void BathroomLogic()
         {
-            Console.WriteLine("/placeholder/");
+            NarrateTalk("You are in the bathroom\n(Take an action or type 'finish')\n'describe  'ask'  'kitchen'  'bedroom'\n");
 
             string action = "";
             while (action != "finish")
@@ -112,13 +138,13 @@ namespace Consolehouse
                 if (action == "bedroom")
                     BedroomLogic();
                 if (action == "ask")
-                    Console.WriteLine("/placeholder/");
+                    HostTalk("Like most of the appartment, it's a little bit basic. But the shower is hot, the john flushes, and everything is clean!\n What more can you ask for?");
                 if (action == "describe")
-                    Console.WriteLine("/placeholder/");
+                    NarrateTalk("The whole room is covered in black and white checkered tile. It contains a shower, toilet, sink, and mirror.");
                 if (action == "finish")
                     EndLogic();
                 else
-                    Console.WriteLine("\nplease enter a valid command\n'describe'  'ask'  'kitchen'  'bedroom'  'finish'");
+                    Console.WriteLine("\nplease enter a valid command\n'describe'  'ask'  'bedroom'  'finish'");
             }
         }
         static void Main(string[] args)
