@@ -1,0 +1,10 @@
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.deps.json
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.runtimeconfig.json
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.runtimeconfig.dev.json
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.dll
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.pdb
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.csproj.CoreCompileInputs.cache
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.AssemblyInfoInputs.cache
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.AssemblyInfo.cs
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.dll
+C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.pdb
