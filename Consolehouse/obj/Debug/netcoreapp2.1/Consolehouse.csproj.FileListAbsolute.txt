@@ -9,3 +9,14 @@ C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Con
 C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.dll
 C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.pdb
 C:\Users\Cory\source\repos\Consolehouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.csprojAssemblyReference.cache
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.deps.json
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.runtimeconfig.json
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.runtimeconfig.dev.json
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.dll
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\bin\Debug\netcoreapp2.1\Consolehouse.pdb
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.csprojAssemblyReference.cache
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.csproj.CoreCompileInputs.cache
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.AssemblyInfoInputs.cache
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.AssemblyInfo.cs
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.dll
+C:\Users\mamac\source\repos\CoryOpenHouse\Consolehouse\obj\Debug\netcoreapp2.1\Consolehouse.pdb
