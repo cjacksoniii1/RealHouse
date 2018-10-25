@@ -40,20 +40,19 @@ namespace Consolehouse
             HellTalk("...Hell...\n");
             HellTalk("You gaze deep into the portal. In the distance, you hear the pained wails of the damned...\n...doomed to forever exist in a swirling vortex of pain and missery...\nIn the center, behind legions of horrible monsters and tormented souls...\nsits an entity that exudes both beauty and terror, the likes of which you have never known before.");
             NarrateTalk("\nYou close the closet door.\n");
-            //Console.WriteLine("/placeholder/");
+            
             BedroomLogic();
         }
         static void EndLogic()
         {
             HostTalk("Oh! You're finished?\nExcellent!\nTell me honestly, what did you think? Do you like it?! (y\n)");
 
-            //Console.WriteLine("/placeholder/");
             return;
         }
         static void MainRoomLogic()
         {
             Console.WriteLine("(You are in the main room)\n(Take an action or type 'finish')\n'describe'  'ask'  'kitchen'  'bedroom'\n");
-            string action = "";//Console.ReadLine();
+            string action = "";
             while (action != "finish")
             {
                 action = Console.ReadLine();
@@ -149,7 +148,6 @@ namespace Consolehouse
         }
         static void Main(string[] args)
         {
-            //   Console.WriteLine("Hello World!");
             MainRoomLogic();
         }
     }
